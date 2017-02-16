@@ -26,7 +26,7 @@ int main() {
     int max = 0;
     int min = 10;
 
-#pragma omp parallel for num_threads(2)
+#pragma omp parallel for num_threads(8)
     for (int i = 0; i < N; i++) {
 #pragma omp critical
         for (int j = 0; j < M; j++) {
