@@ -10,8 +10,11 @@ const int N = 10000;
 const int M = 20000;
 
 int main() {
+
+    srand(time(NULL));
+
     int **matrix = new int *[N];
-    for (int i = 0; i < M; i++) {
+    for (int i = 0; i < N; i++) {
         matrix[i] = new int[M];
         for (int j = 0; j < M; j++) {
             matrix[i][j] = rand() % 10;
