@@ -4,6 +4,7 @@
 #include <zconf.h>
 #include "iostream"
 #include "omp.h"
+#include "../../array_utils.h"
 
 const int ARRAY_SIZE = 10;
 
@@ -18,9 +19,9 @@ int main() {
         b[i] = rand() % 10 - 5;
     }
 
-    print_array(a);
+    print_array(a, ARRAY_SIZE);
     printf("\n");
-    print_array(b);
+    print_array(b, ARRAY_SIZE);
     printf("\n");
 
     int max = -5, min = 5;
