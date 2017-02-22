@@ -16,7 +16,7 @@ int main() {
     for (int i = 0; i < N; i++) {
         matrix[i] = new int[M];
         for (int j = 0; j < M; j++) {
-            matrix[i][j] = rand() % 10;
+            matrix[i][j] = rand() % 100;
         }
     }
 
@@ -28,14 +28,14 @@ int main() {
 
 #pragma omp parallel for num_threads(8)
     for (int i = 0; i < N; i++) {
-#pragma omp critical
         for (int j = 0; j < M; j++) {
+#pragma omp critical
             if (matrix[i][j] > max) {
                 max = matrix[i][j];
             }
         }
-#pragma omp critical
         for (int j = 0; j < M; j++) {
+#pragma omp critical
             if (matrix[i][j] < min) {
                 min = matrix[i][j];
             }

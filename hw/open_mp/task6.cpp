@@ -21,7 +21,7 @@ int main() {
     int sum_a = 0, sum_b = 0;
     double avg_a, avg_b;
 
-#pragma omp parallel for reduction(+:sum_a) reduction(+:sum_b)
+#pragma omp parallel for reduction(+:sum_a, sum_b)
     for (int i = 0; i < ARRAY_SIZE; i++) {
         sum_a += a[i];
         sum_b += b[i];

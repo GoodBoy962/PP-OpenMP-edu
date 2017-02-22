@@ -6,8 +6,8 @@
 #include "omp.h"
 #include "../../array_utils.h"
 
-const int N = 10000;
-const int M = 20000;
+const int N = 400;
+const int M = 700;
 
 int main() {
 
