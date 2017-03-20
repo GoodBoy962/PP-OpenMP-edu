@@ -10,7 +10,6 @@ int main() {
         int thread_id = omp_get_thread_num();
         int threads_num = omp_get_num_threads();
         int count = 0;
-//#pragma omp for
         for (int i = 0; i < 80000000 - 10000000 * (thread_id + 1); i++) {
             count++;
         }

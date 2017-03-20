@@ -1,0 +1,3 @@
+/Users/aleksandrpliskin/Desktop/itis/3_course/pp/OpenMP-edu/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/aleksandrpliskin/Desktop/itis/3_course/pp/OpenMP-edu/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/aleksandrpliskin/Desktop/itis/3_course/pp/OpenMP-edu/cmake-build-debug/CMakeFiles/PPedu.dir
